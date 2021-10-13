@@ -1,0 +1,12 @@
+**************************************************
+* PROGRAMMED BY : Sophie Smith
+* PROGRAMMED BY : Kai Van Westering
+* CLASS         : CS1A
+* SECTION       : MW: 8am - 10:20
+* LAB #9        : Intro to Programming
+**************************************************
+
+Enter the first integer:  34
+Enter the second integer:  563
+
+34 + 563 = 597
