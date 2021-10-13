@@ -48,7 +48,8 @@ int main()
 
     int firstNum;              //IN, CALC & OUT - first value to sum
     int secondNum;             //IN, CALC & OUT - second value to sum
-    int sum;                    // CALC & OUT    - sum of two integers
+    int sum;                   //CALC & OUT     - sum of two integers
+    float avg;                   //CALC & OUT     - average of 
 
 /***********************************************************************
 * OUTPUT – Class Heading
@@ -79,6 +80,7 @@ cout << secondNum<<endl;
 * PROCESSING - Calculates the sum of the two inputs
 ***************************************************************************/
 sum = firstNum + secondNum;
+avg = sum/2.0; 
 
 /***************************************************************************
 * OUTPUT - the input and the sum in the following format:
@@ -97,5 +99,9 @@ cout << firstNum
      << " + " << secondNum
      << " = " << sum
      << endl;
+cout << endl;
+cout << "The average is: " 
+    << avg << fixed << setprecision(2)
+    << endl;
 return 0;
 }
