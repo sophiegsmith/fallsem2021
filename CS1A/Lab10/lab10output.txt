@@ -1,0 +1,17 @@
+Enter the height of the triangle: 
+Enter the base of the triangle: 
+
+Enter the width of the rectangle: 
+Enter the height of the rectangle: 
+
+Enter the radius of the circle: 
+
+
+**************************************************
+* PROGRAMMED BY : Sophie Smith
+* PROGRAMMED BY : Kirtan Bhatt
+* CLASS         : CS1A
+* SECTION       : MW: 8am - 10:20
+* LAB #10       : Intro to Programming
+**************************************************
+
