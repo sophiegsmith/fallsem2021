@@ -1,0 +1,31 @@
+**************************************************
+* PROGRAMMED BY : Sophie Smith
+* PROGRAMMED BY : Nick Greene
+* CLASS         : CS1A
+* SECTION       : MW: 8am - 10:20
+* LAB #11       : Basic Input & Output
+**************************************************
+      
+What's your name?               Jean Cyr
+How much is left from last week 12.50
+How much have you spent?        23.00
+
+
+Hello Jean Cyr!
+You now have $9.50 left. 
+
+What's your name?               Peter McBride
+How much is left from last week 25.15
+How much have you spent?        32.76
+
+
+Hello Peter McBride!
+You now have $12.39 left.
+
+What's your name?               Chris Carroll
+How much is left from last week 5.25
+How much have you spent?        16.50
+
+
+Hello Chris Carroll!
+You now have $8.75 left. 
