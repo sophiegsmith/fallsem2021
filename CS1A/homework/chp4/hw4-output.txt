@@ -1,0 +1,34 @@
+ssmith@Spectre-x360:~/fallsem2021/CS1A/homework/chp4$ ./hwchp4 
+Running Chapter 4 Progrmain Exerciese 4
+Enter the shape type: (rectangle, circle, cylinder) rectangle
+Enter the length of the rectangle: 9 
+Enter the width of the rectangle : 9
+Perimeter of the rectangle= 36.00
+Area of the rectangle=81.00
+
+Running Chapter 4 Progrmain Exerciese 5
+Enter length of the three sides of a triangle: 3 4 5 
+Right triangle
+
+Running Chapter 4 Progrmain Exerciese 5
+Enter two numbers: 4 4
+Enter operator (+,-,/,*): -
+Result is: 0
+
+Running Chapter 4 Progrmain Exerciese 14
+Enter number of hours parked: 4
+Parking fee: $30
+Running Chapter 4 Progrmain Exerciese 20
+Enter the number of rooms: 2
+Enter the number of days: 4
+Room cost: 100
+Discount:40.00
+Number of rooms booked: 2.00
+Totoal cost: 800.00
+
+Running Chapter 4 Progrmain Exerciese 21
+Enter two point on the plane (x,y): 3 3 
+Enter next two point on the plane (x,y): 9 9
+The equation of the line is:  y = mx + b where m = 1.00, x = 6.00, b = 0.00
+Line is increasing
+ssmith@Spectre-x360:~/fallsem2021/CS1A/homework/chp4$ 
