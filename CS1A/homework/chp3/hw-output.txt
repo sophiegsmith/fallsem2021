@@ -1,0 +1,77 @@
+ssmith@Spectre-x360:~/fallsem2021/CS1A/homework/chp3$ ./hwchp3A 
+Running Chapter 3 Progrmain Exerciese 1
+Name: Giselle Robinson, Deparament: Accounting
+Monthly Gross Salary: $5600.00, Monthly Bonus: 5.00%, Taxes: 30.00%
+Paycheck: $-812000.00
+Distance Traveled: 450.00 miles, Traveling Time: 9.00hours
+Average Speed: 50.00 miles per hour
+Sale Amount = 112.50
+
+Running Chapter 3 Progrmain Exerciese 2
+Enter the radius of the base of the cylinder: 100
+Enter the height of the cylinder: 20
+Volume of the cylinder= 628318.00
+Surface area: 75398.16
+
+Running Chapter 3 Progrmain Exerciese 3
+Enter your weight in kilograms: 80
+ Your weigth in pounds is: 176.00 lbs
+
+Running Chapter 3 Progrmain Exerciese 4
+Enter the amount of fertilizer, in pounds,  in one bag: 20
+Enter the cost of the 20.00 pound fertilizer bag: 5
+Enter the area, in square feet, that can be fertilized by one bag: 200
+The cost of the fertilizer per pound is: $4.00
+The cost of fertilizing per square foot is: $40.00
+
+Running Chapter 3 Progrmain Exerciese 5
+Name: Millr Andrew 328949.35
+Name: Green Sheila 455355.36
+Name: Sethi Amit 456893.66
+
+Running Chapter 3 Progrmain Exerciese 6
+Enter the mass in grams: 200
+Enter the density in grams per cubic centimeters: 400
+volume is: 0.50
+
+Running Chapter 3 Progrmain Exerciese 7
+Enter the net balance: 10000
+Enter the payment made: 5000
+Enter the number of days in billing cycle: 30
+Enter the payment days before billing cycle: 4
+Enter the rate per month (e.g., 0.0152): 0.0152
+Average Daily Balance: 9333.33
+Interest : 141.87
+
+Running Chapter 3 Progrmain Exerciese 8
+Enter total merchandise: 1000000
+Enter total salaries: 40000
+Enter yearly rent: 100000
+Enter electricity cost: 40000
+Merchendise should be marked 150.59 % up.
+
+Running Chapter 3 Progrmain Exerciese 9
+Enter cylinder radius: 200
+Enter cylinder heigh: 400
+Side of the cude: 251.98
+
+Running Chapter 3 Progrmain Exerciese 10
+Enter the lenght of the yard: 200
+Enter the radius of the fully grown tree: 10
+Enter the space between fully grown trees: 8
+Number of trees that can be planted is 25.00 that will take up 314.16 of space.
+
+Running Chapter 3 Progrmain Exerciese 11
+Enter the lenght of candy bar: 12
+Enter the width of the candy bar: 8
+Enter the hieght of the candy bar: 3
+Enter the percentage to reduce the candy bar: 8
+Candy  new dimentions : 11.04x7.36x3.00
+
+Running Chapter 3 Progrmain Exerciese 12
+Enter Car A speed: 125
+Enter Car B speed: 90
+Enter the eplapsed time (hours and minuter): 4 40
+Shortest distance between CarA and CarB:  718.80 miles
+
+ssmith@Spectre-x360:~/fallsem2021/CS1A/homework/chp3$ 
