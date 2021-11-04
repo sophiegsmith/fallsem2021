@@ -12,35 +12,47 @@ using namespace std;
 
 int main()
 {
-    //declaring variables
-    string firstName;
-    string lastName; 
-    int baseSalary;
-    double ratePerYear;
-
     //declare stream variables
     ifstream inFile;
     ofstream outFile;
-
+    
     //open input file
     inFile.open("input.txt");
 
-    //if (!inFile)
-    //{
-    //    cout << "Cannot open file." << "Program terminates." << endl; 
-    //    return 1;
-    //}
+    if (!inFile)
+    {
+        cout << "Cannot open file." << "Program terminates." << endl; 
+        return 1;
+     } else {cout << "file opened"<<endl;}
+
     //open output file
     outFile.open ("output.txt");
-    
-    //get data
-    inFile>> firstName >>lastName>> baseSalary>> ratePerYear;
-    
-    //determine the output
-    cout << left;
-    cout << fixed << setprecision(2) << setw(6) << endl; 
-    cout << "New Salaries after 2 years" << endl;
+    if (!outFile)
+    {
+        cout << "Cannot open file." << "Program terminates." << endl; 
+        return -2;
+     } else {cout << "file opened"<<endl;}
 
+    //declaring variables
+    string firstName = " ";
+    string lastName = " "; 
+    int baseSalary = 0.0;
+    double percentIncrease = 0.0;
 
+    //loop output
+    do {
+        //get data and calculate salary
+        inFile >> lastName >> firstName >> baseSalary >> percentIncrease;
+        double salaryMultiplier = 1 + percentIncrease/ 100;
+        double newSalary = baseSalary * salaryMultiplier * salaryMultiplier; 
+        
+        //output the data
+        cout << setprecision(2) << fixed << showpoint << endl; 
+        cout << left << "New Salaries: " << setw(10) << lastName << setw(10) << firstName << right << setw(3) <<
+       "$" << newSalary << setw(7) << endl;
+    } while (!inFile.eof());
+    inFile.close();
+    outFile.close();
     return 0; 
 }
+
