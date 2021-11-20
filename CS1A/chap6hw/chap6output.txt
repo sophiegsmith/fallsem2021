@@ -1,0 +1,490 @@
+//for 1
+Enter a string: madam
+The string  madam is a palindrome. 
+Enter a string: abba
+The string  abba is a palindrome. 
+Enter a string: 22
+The string  22 is a palindrome. 
+Enter a string: 67876
+The string  67876 is a palindrome. 
+Enter a string: 444244
+The string  444244 is not a palindrome. 
+Enter a string: trymeuemyrt
+The string  trymeuemyrt is a palindrome.
+
+//for 2
+Enter a letter: s
+The letter s is not a vowel.
+Enter a letter: h
+The letter h is not a vowel.
+Enter a letter: i
+The letter i is a vowel.
+Enter a letter: a
+The letter a is a vowel.
+Enter a letter: e
+The letter e is a vowel.
+Enter a letter: f
+The letter f is not a vowel.
+
+//for 3
+Enter a sequence of characters: hefos
+There were 2 vowels.
+
+Enter a sequence of characters: aeiou
+There were 5 vowels.
+
+Enter a sequence of characters: rstvwlm
+There were 0 vowels.
+
+Enter a sequence of characters: sophie
+There were 3 vowels.
+
+//for 4
+Enter the radius of the sphere: 6.4
+Square root of Pi = 1.77245
+Surface are of sphere = 514.718
+Volume of sphere = 1098.07
+
+Enter the radius of the sphere: 2.69
+Square root of Pi = 1.77245
+Surface are of sphere = 90.9314
+Volume of sphere = 81.5352
+
+Enter the radius of the sphere: 12.7
+Square root of Pi = 1.77245
+Surface are of sphere = 2026.83
+Volume of sphere = 8580.24
+
+//for 5
+Enter number of star lines(1-20): 5
+
+
+                               *
+                              * *
+                             * * *
+                            * * * *
+                           * * * * *
+Line 12: Inside main: num 1 =10, num2=15, and ch = A
+Line 26: Inside funOne: a =11, b=30, and v = B
+Line 14: After funOne: num 1 =10, num2=30, and ch = A
+Line 33: Inside funTwo: x =31, y=50, and W = G
+Line 16: After funTwo: num 1 =10, num2=31, and ch = G
+ssmith@Spectre-x360:~/fallsem2021/CS1A/chap6hw$ ./hw
+Enter number of star lines(1-20): 15
+
+
+                               *
+                              * *
+                             * * *
+                            * * * *
+                           * * * * *
+                          * * * * * *
+                         * * * * * * *
+                        * * * * * * * *
+                       * * * * * * * * *
+                      * * * * * * * * * *
+                     * * * * * * * * * * *
+                    * * * * * * * * * * * *
+                   * * * * * * * * * * * * *
+                  * * * * * * * * * * * * * *
+                 * * * * * * * * * * * * * * *
+Line 12: Inside main: num 1 =10, num2=15, and ch = A
+Line 26: Inside funOne: a =11, b=30, and v = B
+Line 14: After funOne: num 1 =10, num2=30, and ch = A
+Line 33: Inside funTwo: x =31, y=50, and W = G
+Line 16: After funTwo: num 1 =10, num2=31, and ch = G
+ssmith@Spectre-x360:~/fallsem2021/CS1A/chap6hw$ ./hw
+Enter number of star lines(1-20): 3
+
+
+                               *
+                              * *
+                             * * *
+Line 12: Inside main: num 1 =10, num2=15, and ch = A
+Line 26: Inside funOne: a =11, b=30, and v = B
+Line 14: After funOne: num 1 =10, num2=30, and ch = A
+Line 33: Inside funTwo: x =31, y=50, and W = G
+Line 16: After funTwo: num 1 =10, num2=31, and ch = G
+
+//for 6
+Enter a number: 10
+Two times the number: 20
+Enter two integers: 
+10
+5
+Sum of integers from 5 to 10 is 45
+Average of the integers: 7.5
+
+Enter a number: 8
+Two times the number: 16
+Enter two integers: 
+8
+20
+Sum of integers from 8 to 20 is 182
+Average of the integers: 14
+
+Enter a number: 18
+Two times the number: 36
+Enter two integers: 
+18
+28
+Sum of integers from 18 to 28 is 253
+Average of the integers: 23
+
+//for 7
+Enter a number : 7 7
+Enter a number : 5 5
+Sum of primes is 2
+
+Enter a number : 4 4
+Enter a number : 4 4
+Sum of primes is 1
+
+Enter a number : 1 2
+Enter a number : 4 8
+Sum of primes is 5
+
+//for 8
+To run the program enter: 
+1: To find the area of rectangle. 
+2: To find the area of circle. 
+3: To find the area of cylinder. 
+-1: To terminate the program. 
+1
+
+Enter the length  and width of the rectangle: 5 9
+Area of Rectangle = 45.00
+To run the program enter: 
+1: To find the area of rectangle. 
+2: To find the area of circle. 
+3: To find the area of cylinder. 
+-1: To terminate the program. 
+2
+
+Enter the radius of the circle: 4
+Area of Cirlce = 50.27
+To run the program enter: 
+1: To find the area of rectangle. 
+2: To find the area of circle. 
+3: To find the area of cylinder. 
+-1: To terminate the program. 
+3
+
+Enter the radius of the base of the cylinder: 5
+Enter the height of the cylinder: 9
+Volume of Cylinder= 706.93
+To run the program enter: 
+1: To find the area of rectangle. 
+2: To find the area of circle. 
+3: To find the area of cylinder. 
+-1: To terminate the program. 
+-1
+
+//for 9
+54321
+-235
+
+//for 10
+
+//for 11
+Enter the points for the center of the circle: 0 0
+Enter any point on the circle: 2 2
+/n The distance between the points: 2.82843
+The radius of the circle: 2
+The circumference of the circle: 12.5664
+The area of the circle: 12.5664
+
+Enter the points for the center of the circle: 0, 2
+Enter any point on the circle: /n The distance between the points: 0
+The radius of the circle: 9.88131e-324
+The circumference of the circle: 6.42285e-323
+The area of the circle: 0
+
+Enter the points for the center of the circle: 0 2
+Enter any point on the circle: 4 4
+/n The distance between the points: 4.47214
+The radius of the circle: 4
+The circumference of the circle: 25.1327
+The area of the circle: 50.2654
+
+Enter the points for the center of the circle: 0 3
+Enter any point on the circle: 3 6
+/n The distance between the points: 4.24264
+The radius of the circle: 6
+The circumference of the circle: 37.6991
+The area of the circle: 113.097
+
+//for 12
+Enter value of x1= 1
+Enter value of x2= 2
+Enter value of x3= 3
+Enter value of x4= 4
+Enter value of x5= 5
+The mean value is 3
+The mean standard deviation is 6.8
+
+Enter value of x1= 1.2
+Enter value of x2= 2.3
+Enter value of x3= 3.4
+Enter value of x4= 4.5
+Enter value of x5= 5.6
+The mean value is 3.4
+The mean standard deviation is 8.228
+
+Enter value of x1= 1.5
+Enter value of x2= 2.4
+Enter value of x3= 3.3
+Enter value of x4= 4.2
+Enter value of x5= 5.1
+The mean value is 3.3
+The mean standard deviation is 5.508
+
+//for 13
+Enter L: 1.1
+Enter r: 1.2
+Enter m: 1.3
+Enter t: 1.4
+Enter t: 1.5
+Periodic Payment: 0.735997
+Unpaid Balance: 0.574567
+Run again (Y/N)?
+Y
+Enter L: 1.1
+Enter r: 2.2
+Enter m: 3.3
+Enter t: 4.4
+Enter t: 5.5
+Periodic Payment: 0.733239
+Unpaid Balance: 1.09976
+Run again (Y/N)?
+Y
+Enter L: 11.1
+Enter r: 22.2
+Enter m: 33.3
+Enter t: 44.4
+Enter t: 55.5
+Periodic Payment: 7.4
+Unpaid Balance: 11.1
+Run again (Y/N)?
+N
+
+//for 14
+
+//for 15
+Enter wind speed (miles per hour): 45.5
+Enter temperature (Farenheit): 63.8
+Wind Chill Factor is: 59.7801
+
+Enter wind speed (miles per hour): 30.0
+Enter temperature (Farenheit): 85
+Wind Chill Factor is: 89.5799
+
+Enter wind speed (miles per hour): 56.75
+Enter temperature (Farenheit): 75.83
+Wind Chill Factor is: 76.5088
+
+//for 16
+Enter the number of hours worked: 7
+Enter the rate per hour: 6
+
+Hours worked: 6.00
+Hourly Rate: 7.00
+Salary: $42.00
+Initial values of x, y, and z are 
+x = 0
+y = 0
+z =  
+Enter a number: 4
+Updated values of x, y, and z are 
+x = -4
+y = 0
+z = !
+
+Enter the number of hours worked: 41
+Enter the rate per hour: 5
+
+Hours worked: 5.00
+Hourly Rate: 41.00
+Salary: $205.00
+Initial values of x, y, and z are 
+x = 0
+y = 0
+z =  
+Enter a number: 8
+Updated values of x, y, and z are 
+x = -8
+y = 0
+z = !
+
+//for 17
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 1
+
+Enter the first integer number: 8
+Enter the second integer number: 9
+8, 9, 43046721.00
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 1
+
+Enter the first integer number: 2
+Enter the second integer number: 4
+2, 4, 16.00
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 2
+
+Enter the first integer number: 5
+Enter the second integer number: 6
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 1
+
+Enter the first integer number: 4
+Enter the second integer number: 5
+4, 5, 625.00
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 1
+
+Enter the first integer number: 6
+Enter the second integer number: 7
+6, 7, 117649.00
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 99
+
+Enter the first integer number: 99
+Enter the second integer number: 99
+
+//for 18
+
+//for 19
+Enter course score: 90
+Course score is 90
+Your grade for this course is: A
+Enter course score: 79
+Course score is 79
+Your grade for this course is: C
+Enter course score: 83
+Course score is 83
+Your grade for this course is: B
+
+//for 20
+
+//for 21
+Enter a date(mm--dd--yyyy): 04 10 2002
+Enter correct month or day.The day number is: 0ssmith@Spectre-x360:~/fallsem2021/CS1A/chap6hw$ ./hw
+Enter a date(mm--dd--yyyy): 04-10-2002
+The day number is: 100ssmith@Spectre-x360:~/fallsem2021/CS1A/chap6hw$ ./hw
+Enter a date(mm--dd--yyyy):11-30-2001
+The day number is: 334ssmith@Spectre-x360:~/fallsem2021/CS1A/chap6hw$ ./hw
+Enter a date(mm--dd--yyyy):12-18-1943
+
+//for 22
+Enter string: sophie
+Vowel 'a' count is 0
+Vowel 'e' count is 1
+Vowel 'i' count is 1
+Vowel 'o' count is 1
+Vowel 'u' count is 0
+
+Enter string: maddie
+Vowel 'a' count is 1
+Vowel 'e' count is 1
+Vowel 'i' count is 1
+Vowel 'o' count is 0
+Vowel 'u' count is 0
+
+Enter string: dualipa
+Vowel 'a' count is 2
+Vowel 'e' count is 0
+Vowel 'i' count is 1
+Vowel 'o' count is 0
+Vowel 'u' count is 1
+
+//for 23
+Enter string: sophie
+Vowel 'a' count is 0
+Vowel 'e' count is 1
+Vowel 'i' count is 1
+Vowel 'o' count is 1
+Vowel 'u' count is 0
+
+Enter string: lily
+Vowel 'a' count is 0
+Vowel 'e' count is 0
+Vowel 'i' count is 1
+Vowel 'o' count is 0
+Vowel 'u' count is 0
+
+Enter string: semester
+Vowel 'a' count is 0
+Vowel 'e' count is 3
+Vowel 'i' count is 0
+Vowel 'o' count is 0
+Vowel 'u' count is 0
+
+//for 24
+
+//for 25
+The discouts are: 
+(a) 30%' for senior citizens.
+(b) 15%' if membership is bought or paid for 12 months.
+(c) 20%' for 5 personal training sessions are bought and paid for.
+Enter cost per month: 1000
+Enter cost per personal training session: 500
+Enter 'Y' if you are a senior citizen: n
+Enter number of training sessions bought: 10
+Enter number of months paid for: 4
+
+Cost of new membership: 3200.00
+Enter 'Y' for another membership: 
+y
+The discouts are: 
+(a) 30%' for senior citizens.
+(b) 15%' if membership is bought or paid for 12 months.
+(c) 20%' for 5 personal training sessions are bought and paid for.
+Enter cost per month: 1000
+Enter cost per personal training session: 400
+Enter 'Y' if you are a senior citizen: y
+Enter number of training sessions bought: 4
+Enter number of months paid for: 7
+
+Cost of new membership: 4900.00
+Enter 'Y' for another membership: 
+y
+The discouts are: 
+(a) 30%' for senior citizens.
+(b) 15%' if membership is bought or paid for 12 months.
+(c) 20%' for 5 personal training sessions are bought and paid for.
+Enter cost per month: 1000
+Enter cost per personal training session: 550
+Enter 'Y' if you are a senior citizen: n
+Enter number of training sessions bought: 6
+Enter number of months paid for: 12
+
+Cost of new membership: 7800.00
+Enter 'Y' for another membership: 
+n
+
+//for 29
+Enter the area of the cardboard: 20
+Length of cardboard = 5 inches. 
+Width of cardboard = 4 inches. 
+Length of square to cut to form box = 0.736 inches. 
+Max volume of box = 6.56 inches cubed.
+
+//for 30
+Enter width of river: 25
+Enter distance of factory: 78
+Enter cost of laying powerline underwater: 678901
+Enter cost of laying powerline over land: 901234
+Length of powerline underwater is: 81.9
+Length of powerline overwater is: 0
+Cost of constructing the power line is: 5.56e+07
+
+//for 31
+Enter widths of both of the corridors: 23 45
+Longest length 268
