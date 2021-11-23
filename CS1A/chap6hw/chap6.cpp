@@ -36,6 +36,9 @@ void programming_excercise_22();
 void programming_excercise_23();
 void programming_excercise_24();
 void programming_excercise_25();
+void programming_excercise_26();
+void programming_excercise_27();
+void programming_excercise_28();
 void programming_excercise_29();
 void programming_excercise_30();
 void programming_excercise_31();
@@ -64,6 +67,9 @@ bool isPalindrome(string str)
 void programming_excercise_1()
 {
     string str; 
+
+    cout << "running excericise 1" << endl;
+
     cout << "Enter a string: ";
     cin >> str;
 
@@ -88,6 +94,8 @@ bool isVowel(char letter)
 void programming_excercise_2()
 {
     char letter;
+    cout << "running excericise 2" << endl;
+
     cout << "Enter a letter: ";
     cin >> letter;
 
@@ -115,6 +123,9 @@ void programming_excercise_3()
     int count = 0;
     int len;
     string myString;
+
+    cout << "running excericise 3" << endl;
+
     cout << "Enter a sequence of characters: ";
     getline(cin,myString); 
     len = myString.length();
@@ -139,6 +150,8 @@ void programming_excercise_4()
 {
     const double PI = 3.14159;
     double r = 0;
+
+    cout << "running excericise 4" << endl;
 
     cout << "Enter the radius of the sphere: ";
     cin >> r; 
@@ -189,6 +202,9 @@ void programming_excercise_5()
     int noOflines;
     int noOfBlanks; 
     int counter;
+
+    cout << "running excericise 5" << endl;
+
     cout << "Enter number of star lines(1-20): ";
     cin >> noOflines;
 
@@ -246,7 +262,7 @@ void avg_func()
     float avg = 0;
     float sum = 0;
 
-    cout << "Enter two integers: " << endl;
+    cout << "Enter two integers: ";
     cin >> numx >> numy;
 
     if (numx > numy)
@@ -267,6 +283,7 @@ void avg_func()
 }
 void programming_excercise_6()
 {
+    cout << "running excericise 6" << endl;
     num_func();
     avg_func();
 }
@@ -276,12 +293,14 @@ void programming_excercise_6()
 int getNumberFromUser()
 {
     int number = 0;
+
     cout << "Enter a number : ";
     cin >> number; 
 
-    while (number < 0)
+    while (number < 0){
         cout << "Invalid entry. Enter a number: ";
         cin >> number; 
+    }
     return number; 
 }
 
@@ -312,6 +331,8 @@ int calculateSumOfPrimesBetween(int number1, int number2)
 
 void programming_excercise_7()
 {
+    cout << "running excericise 7" << endl;
+
     int num1 = getNumberFromUser();
     int num2 = getNumberFromUser();
     int sum = calculateSumOfPrimesBetween(num1,num2);
@@ -346,6 +367,8 @@ void programming_excercise_8()
     double length;
     double width;
     double radius;
+
+    cout << "running excericise 8" << endl;
 
     cout <<fixed<< showpoint << setprecision(2);
     cout << "To run the program enter: "<< endl;
@@ -418,6 +441,8 @@ int reverseDigit(int number)
 }
 void programming_excercise_9()
 {
+    cout << "running excericise 9" << endl;
+
     cout << reverseDigit(12345) << endl;
     cout << reverseDigit(-532) << endl;
 }
@@ -438,26 +463,30 @@ int rollDice(int num)
         die1 = rand() % 6 + 1;
         die2 = rand() % 6 + 1;
         rollCount++;
+        sum = die1+die2;
     } while (sum!=num);
     return rollCount;
 }
 
 void programming_excercise_10()
 {
-    //int choice;
-    //do
-    //{
-        /* code */
-        //int desiredSum;
-        //cout << "Enter the desired sum of numbers to be rolled: ";
-        //cin>>desiredSum;
-        //cout << endl << "the numebr of times the dice is rolled to =" << desiredSum << rollDice(desiredSum) << endl;
-        //cout << "To play, enter 1, other numbers will terminate." << endl;
-        //cin >> choice;
-    //} while (choice == 1);
-    
-    cout << "The number of times the dice are rolled to get the sum of 10 = " <<rollDice(10) << endl;
-    cout << "The number of times the dice are rolled to get the sum of 6 = " << rollDice(6) << endl;
+    int numbeOfDiceRolls = 0;
+    int desiredSum = 0; 
+    char rollAgain = 'n';    
+
+    cout << "running excericise 10" << endl;
+
+    do {    
+        cout << "Enter the desired sum of numbers to be rolled: ";
+        cin >> desiredSum;
+        
+        cout << "Enter the number of dice rolls to ge the sum: " << desiredSum << " : ";
+        cin >> numbeOfDiceRolls;
+        cout << endl << "Rolling dices...." << " got: " << rollDice(desiredSum) <<  " number of dice rolls to get the sum: " << desiredSum << endl;
+        cout << "Roll dice again (y/n)?";
+        cin >> rollAgain;
+    } while ( rollAgain == 'y');
+ 
 }
 //end of 10
 
@@ -489,6 +518,8 @@ void programming_excercise_11()
     double radiusCircle;
     double circumferenceOfCircle;
     double circleArea;
+
+    cout << "running excericise 11" << endl;
 
     cout << "Enter the points for the center of the circle: ";
     cin >> x1 >>y1;
@@ -526,6 +557,8 @@ void programming_excercise_12()
 {
     double x1, x2, x3,x4,x5;
     double x,s;
+
+    cout << "running excericise 12" << endl;
 
     cout << "Enter value of x1= ";
     cin >> x1;
@@ -569,6 +602,8 @@ void programming_excercise_13()
     double k = 0; 
     char runAgain = 'Y';
 
+    cout << "running excericise 13" << endl;
+
     while (runAgain == 'Y' || runAgain == 'y')
     {
         cout << "Enter L: ";
@@ -596,9 +631,54 @@ void programming_excercise_13()
 //end of 13
 
 //starting 14
+double calculateBillingRate(double rate, double total_consulting_time, bool low_income)
+{
+    double service_charge = 0.0;
+    double billing_rate = 0.0;
+    double billing_grace_period = 0.0;
+
+    if (low_income)
+    {
+        service_charge = 40.0;
+        billing_grace_period = 30.0;
+    }
+    else 
+    {
+        service_charge = 70.0;
+        billing_grace_period = 40.0;
+    }
+    if (total_consulting_time <= 30){
+        billing_rate = 0.0;
+    } else {
+        billing_rate = rate * (service_charge/100.00) * ((total_consulting_time - billing_grace_period/60));
+    }
+    
+    return billing_rate;
+
+}
+
 void programming_excercise_14()
 {
+    double rate = 0.0; 
+    double total_consulting_time = 0.0;
+    double salary = 0.0;
+    bool low_income = false;
+    
+    cout << "Running excerise 14" << endl;
 
+    cout << "Enter hourly rate: ";
+    cin >> rate;
+    cout << "Enter total consulting time (minutes): ";
+    cin >> total_consulting_time;
+    cout << "Enter yearly income amount : " ;
+    cin >> salary;
+    
+    if (salary <= 25000.00){
+        low_income = true;
+    }
+    double client_billing_rate = calculateBillingRate(rate, total_consulting_time, low_income);
+    cout <<fixed << showpoint << setprecision(2)<<"\nBilling rate : $" << client_billing_rate << endl;
+ 
 }
 //ending 14
 
@@ -617,6 +697,9 @@ double calc_wcFactor(double &v, double &t)
 void programming_excercise_15()
 {
     double wcFactor, velocity, temperature;
+
+    cout << "Running excerise 15" << endl;
+
     read_input(velocity, temperature);
     wcFactor = calc_wcFactor(velocity, temperature);
     cout << "Wind Chill Factor is: " << wcFactor << endl;
@@ -680,6 +763,8 @@ void programming_excercise_16()
     char z;
     double rate, hours, amount;
 
+    cout << "Running excerise 16" << endl;
+
     initialize(x, y, z);
     getHoursRate(rate, hours);
     amount = payCheck(hours, rate);
@@ -742,23 +827,26 @@ void programming_excercise_17()
     double num3;
     int choice;
 
+    cout << "Running excerise 17" << endl;
+
     cout << fixed << showpoint << setprecision(2) << endl;
     do
     {
         func1();
         cin >> choice;
         cout << endl;
+        if (choice != 99 ){
+            cout << "Enter the first integer number: ";
+            cin >> num1;
 
-        cout << "Enter the first integer number: ";
-        cin >> num1;
+            cout << "Enter the second integer number: ";
+            cin >> num2;
 
-        cout << "Enter the second integer number: ";
-        cin >> num2;
-
-        if (choice == 1)
-        {
-            func2(num1, num2, num3);
-            cout << num1 << ", " << num2 << ", " << num3 << endl;
+            if (choice == 1)
+            {
+                func2(num1, num2, num3);
+                cout << num1 << ", " << num2 << ", " << num3 << endl;
+            }
         }
     } while (choice != 99);
 }
@@ -767,34 +855,36 @@ void programming_excercise_17()
 //start 0f 18
 void timeOnJob(int arvHr, int arvMin, bool arvIsAM, int depHr, int depMin, bool depIsAM)
 {
-    int arvTimeInMin;
-    int depTimeInMin;
-    int timeOnJobInMin;
-    arvTimeInMin = arvHr * 60 * arvMin;
-    depTimeInMin = depHr * 60 * depMin;
+    int arvTimeInMin = 0;
+    int depTimeInMin = 0;
+    int timeOnJobInMin = 0;
 
-    if((arvIsAM == true && depIsAM == true) || (arvIsAM == false && depIsAM == false))
-    {
+    if((arvIsAM == true && depIsAM == true) || 
+            (arvIsAM == false && depIsAM == false)){
+    
+       cout << "Invalid Input. " << endl;
+ 
+    }else if (arvIsAM  == true && depIsAM == false){
+        arvTimeInMin = arvHr * 60 + arvMin;
+        depTimeInMin = depHr * 60 + depMin;
+        timeOnJobInMin = (720 - arvTimeInMin) + depTimeInMin;
         if (arvTimeInMin <= depTimeInMin)
         {
             timeOnJobInMin = depTimeInMin - arvTimeInMin; 
-            cout << "Time spent on job: " << timeOnJobInMin/60 << "hour(s) and " << timeOnJobInMin % 60 << " min. " << endl;
-        }
-        else
-        {
-            cout << "Invalid Input. " << endl;
-        }
+            cout << "Time spent on job: " 
+              << timeOnJobInMin/60 << "hour(s) and " 
+              << timeOnJobInMin % 60 << " min. " << endl;
+         }else {
+            cout << "Time spent on job: "
+             << timeOnJobInMin/60 << "hour(s) and " 
+             << timeOnJobInMin % 60 << " min. " << endl;
+         }
     }
-    else if (arvIsAM  == true && depIsAM == false)
+    else
     {
-        timeOnJobInMin = (720 - arvTimeInMin) + depTimeInMin;
-        cout << "Time spent on job: " << timeOnJobInMin/60 << "hour(s) and  timeOnJobInMin = " << (720 - arvTimeInMin) + depTimeInMin << endl; 
-        cout << "Time spent on job: " << timeOnJobInMin/60 << "hour(s) and " << timeOnJobInMin % 60 << " min. " << endl;
-    }    
-    else 
-    {
-        cout << "Invalid Input."; 
+        cout << "Invalid Input. " << endl;
     }
+
 }
 
 void programming_excercise_18()
@@ -810,14 +900,18 @@ void programming_excercise_18()
     char discard; 
     char isAM;
 
+    cout << "Running excerise 18" << endl;
     cout << "This program calculates the total time spent by an employee on the job." << endl;
-    cout << "To enter the program, enter(y/Y): ";
-    cin >> response;
-    cin.get(discard);
-    cout << endl; 
-
-    while(response == 'y' || response == 'Y')
+    do
     {
+        cout << "To enter the program, enter(y/Y): ";
+        cin >> response;
+        cin.get(discard);
+        cout << endl; 
+
+        if (response == 'n' || response == 'N'){
+            break;
+        }
         cout << "Enter employee's name: ";
         getline(cin, employeeName); 
         cout << endl; 
@@ -853,7 +947,8 @@ void programming_excercise_18()
         
         cout << employeeName << endl;
         timeOnJob(arrivalHr, arrivalMin, arrivalAM, departureHr,departureMin, departureAM);
-    }
+    } while(response == 'y' || response == 'Y');
+
 }
 //end of 18
 
@@ -867,80 +962,101 @@ void getScore(int& score)
 
 char calculateGrade(int courseScore)
 {
+    char grade = 'U';
+
     if(courseScore >= 90)
-        return 'A';
-    else 
-        if(courseScore >= 80)
-            return 'B';
-        else
-            if (courseScore >= 70)
-                return 'C';
-            else
-                if (courseScore >= 60)
-                    return 'D';
-                else
-                    if(courseScore >= 50)
-                        return 'F';    
+        grade = 'A';
+    else if(courseScore >= 80)
+        grade = 'B';
+    else if (courseScore >= 70)
+        grade = 'C';
+    else if (courseScore >= 60)
+        grade =  'D';
+    else if(courseScore >= 50)
+        grade = 'F';    
+    return (grade);            
 }
 
 void programming_excercise_19()
 {
     int courseScore;
+    cout << "Running excerise 19" << endl;
+
     getScore(courseScore);
-    cout << "Your grade for this course is: " << calculateGrade(courseScore);
+    cout << "Your grade for this course is: " << calculateGrade(courseScore) << endl;
 }
 //end of 19
 
 //start of 20
-/*void initialize(int& zeroCount, int& oddCount, int& evenCount)
-{
-    zeroCount = 0;
-    oddCount = 0
-    evenCount = 0; 
+int getNumber(ifstream& fin){
+   int n;
+   fin>>n;
+   return n;
 }
+void printResult(ofstream& fout, int* next20NumberTobeProcess, int count, int& sum)
+{
+    int index = 0;
+    for(;index < count; index++){
+        if(index % 10 == 0){
+            // ten number per row
+            fout << "\n";
+        }else {
+            //add space between numbers
+            fout << " ";
+        }
+        fout << next20NumberTobeProcess[index];
+        sum+= next20NumberTobeProcess[index];
+    }
+}
+
 void programming_excercise_20()
 {
-    int counter =0;
-    int number;
-    int zeroes;
-    int odds;
-    int evens; 
+    int count = 0;
+    int index = 0;
     int sum = 0;
-    
+    int next20NumberTobeProcess[21];    
     ifstream infile;
     ofstream outfile;
-    
-    infile.open("input.txt");
+    cout << endl;
 
+    cout << "Running excerise 20" << endl;
+    infile.open("input.txt");
     if (!infile)
     {
         cout << "Cannot open file." << "Program terminates." << endl; 
-     } else {cout << "file opened"<<endl;}
+        return;
+    } else {
+        cout << "file opened"<<endl;
+        return;
+    }
 
     outfile.open ("output.txt");
     if (!outfile)
     {
         cout << "Cannot open file." << "Program terminates." << endl; 
-     } else {cout << "file opened" <<endl;}
-
-    initialize(zeroes, odds, evens );
-
-    while(true)
-    {
-        getNumber(infile, outfile, number);
-        if (!infile)
-            break; 
-        sum += number;
-        counter++;
-        if((counter % 10) == 0)
-            outfile << endl; 
-        classifyNumbers(number, zeroes, odds, evens);
+    } else {
+        cout << "file opened" <<endl;
     }
-    printResults(outfile, zeroes, evens, odds, sum);
 
+    while (!infile.eof()){
+        next20NumberTobeProcess[index] = getNumber(infile);
+        index++;
+        //read 20 numbers
+        if(index%20==0){
+            printResult(outfile, next20NumberTobeProcess, 20, sum);
+            count+= index;
+            index = 0;
+        }
+        
+    }
+
+   outfile <<  "\n\n";
+   outfile << "total count: " << count <<endl;
+   outfile << "sum: "<< sum << endl;
+   outfile << "average: "<< (float) sum / count;
 }
 //end of 20
-*/
+
 //start of 21
 bool isLeapYear(int year)
 {
@@ -956,6 +1072,7 @@ void programming_excercise_21()
     int day, month, year;
     int dayNum = 0;
     char ch;
+    cout << "Running excerise 21" << endl;
     cout << "Enter a date(mm--dd--yyyy):";
     cin >> month;
     cin >> ch;
@@ -996,7 +1113,7 @@ void programming_excercise_21()
     {
         cout << "Enter correct month or day.";
     } dayNum += day; 
-    cout << "The day number is: " << dayNum; 
+    cout << "The day number is: " << dayNum << endl;
 }
 //end of 21
 
@@ -1018,8 +1135,9 @@ int vowelCount(string str, char ch)
 void programming_excercise_22()
 {
     string str1;
+    cout << "running excericise 22" << endl;
     cout << "Enter string: ";
-    getline(cin, str1);
+    cin >> str1;
     cout << "Vowel 'a' count is " << vowelCount(str1, 'a') << endl;
     cout << "Vowel 'e' count is " << vowelCount(str1, 'e') << endl;
     cout << "Vowel 'i' count is " << vowelCount(str1, 'i') << endl;
@@ -1041,58 +1159,72 @@ void programming_excercise_23()
 {
     string str1;
     int count = 0;
+
+    cout << "running excericise 23" << endl;
     cout << "Enter string: ";
-    getline(cin, str1);
+    cin >> str1;
 
     for(int i = 0; i < str1.length(); i++)
     {
-        count = count + vowelCount(str1, 'a');
+        if (vowelCount(str1, 'a') == 1)
+        {
+            count++;
+        }
     }
     cout << "Vowel 'a' count is " << vowelCount(str1, 'a') << endl;
-
+    count = 0;
     for(int i = 0; i < str1.length(); i++)
     {
-        count = count + vowelCount(str1, 'e');
+        if (vowelCount(str1, 'e') == 1){
+            count++;
+        }
+        
     }
     cout << "Vowel 'e' count is " << vowelCount(str1, 'e') << endl;
-
+    count = 0;
     for(int i = 0; i < str1.length(); i++)
     {
-        count = count + vowelCount(str1, 'i');
+        if (vowelCount(str1, 'i') == 0){
+            count++;
+        }
     }
     cout << "Vowel 'i' count is " << vowelCount(str1, 'i') << endl;
-
+    count = 0;
     for(int i = 0; i < str1.length(); i++)
     {
-        count = count + vowelCount(str1, 'o');
+        if (vowelCount(str1, 'o') == 0){
+            count++; 
+        }
     }
     cout << "Vowel 'o' count is " << vowelCount(str1, 'o') << endl;
-
+    count++;
     for(int i = 0; i < str1.length(); i++)
     {
-        count = count + vowelCount(str1, 'u');
+        if(vowelCount(str1, 'u') == 1){
+            count++;
+        }
     }
     cout << "Vowel 'u' count is " << vowelCount(str1, 'u') << endl;
 }
 //end of 23
-
 //start of 24
 void numbersCount(long long value)
 {
     int i;
     int even = 0;
     int odd = 0;
-    int zeroes;
+    int zeroes = 0;
     while (value > 0)
     {
         i = value % 10;
-        if(i % 2 == 0 && i >= 0)
-            even++;
-        else if (i > 0)
+        if(i % 2 == 0 && i != 0){
+           even++;
+        }else if(i % 2 != 0){
             odd++;
-        if (i != 0)
-            zeroes++;
-            value = value/10;
+        }else if(i == 0){
+            zeroes++;  
+        }
+        value = value/10;
     } 
     cout << "Number of odds: " << odd << endl;
     cout << "Number of evens: " << even << endl;
@@ -1101,6 +1233,8 @@ void numbersCount(long long value)
 void programming_excercise_24()
 {
     long long num;
+
+    cout << "running excericise 24" << endl;
     cout << "Enter a long value: ";
     cin >> num;
     numbersCount(num);
@@ -1162,7 +1296,9 @@ void programming_excercise_25()
     int numOfMonths;
     double newMemberCost;
     char again; 
-    
+
+    cout << "running excericise 25" << endl;
+
     do
     {
         displayGenInfo();
@@ -1176,6 +1312,186 @@ void programming_excercise_25()
 }
 //end of 25
 
+//start of 26
+void getInput(double& currentPrice, double& prevPrice,double& twoYPrice)
+{
+    cout << "Enter current price: ";
+    cin >> currentPrice;
+    cout << "Enter previous year price: ";
+    cin >> prevPrice;
+    cout << "Enter price from two years ago: ";
+    cin >> twoYPrice;
+}
+
+void calcInflation( double currentPrice, double prevPrice,double twoYPrice, double& currentInflatation,double& prevInflation)
+{
+    currentInflatation = (currentPrice - prevPrice) / prevPrice;
+    prevInflation = (prevPrice - twoYPrice) / twoYPrice;
+}
+
+void printOutput( double currentInflation, double prevInflation)
+{
+    cout << "Inflation of this year is: " << (currentInflation * 100) << "%" << endl;
+    cout << "Previous inflation from last year" << (prevInflation * 100) << "%" << endl;
+    
+}
+void programming_excercise_26()
+{
+    double currentPrice, prevPrice, twoYPrice;
+    double currentInflatation, prevInflation;
+
+    cout << "running excericise 26" << endl;
+
+    getInput(currentPrice, prevPrice, twoYPrice);
+    calcInflation(currentPrice, prevPrice, twoYPrice, currentInflatation, prevInflation);
+    printOutput(currentInflatation, prevInflation);
+}
+//end of 26
+
+//start of 27 
+void getHoursAndMinutes(int& hours, int& minutes)
+{
+    char fmt;
+    cin >> hours >> fmt >> minutes;
+}
+void getTime(int& hours, int& minutes, string timefmtmsg)
+{
+    cout << timefmtmsg ;
+    getHoursAndMinutes( hours,  minutes);
+}
+void getTimebyFormat(int& hours, int& minutes, int type)
+{
+    string timefmtmsg;
+    if (type == 1)
+    {
+        timefmtmsg = "Enter time in  24 hour time format(hh:mm): ";
+        getTime(hours, minutes, timefmtmsg);
+    } else if (type == 2){
+        timefmtmsg = "Enter time in 12 hour time format(hh:mm): ";
+        getTime(hours, minutes, timefmtmsg);
+    } else {
+        hours = 0;
+        minutes = 0;
+    }
+}
+void convertTimeFormat(int& hours, int& minutes, string& AmorPm, int type )
+{
+    if (type == 1){
+        if (hours < 12){
+            AmorPm = "AM";
+        } else {
+            AmorPm = "PM";
+            hours -= 12;
+        }
+    } else if (type = 2){
+        hours = hours + 12;
+        AmorPm = "";
+    }
+}
+void displayTime(int hours, int minutes, char type)
+{
+    string AmorPm = "";
+    convertTimeFormat(hours, minutes, AmorPm,type);
+    if (type == 1){
+        cout << "converted to 12 hour format is: " ;
+        cout << hours << ":" << minutes <<  " " << AmorPm << endl;
+    } else if (type == 2){
+        cout << "converted to 24 hour format is: " ;
+        cout << hours << ":" << minutes << AmorPm << endl;
+    }
+    cout << endl;
+}
+
+void programming_excercise_27()
+{
+   int hours;
+   int minutes;
+   int type;
+   cout << "running excericise 27" << endl;
+
+   do
+   {
+       cout << "Time format conversion program" << endl;
+       cout << "1 - 24 Hours To 12 Hours" << endl;
+       cout << "2 - 12 Hours To 24 Hours" << endl;
+       cout << "3 - Exit";
+       cout << "\nEnter Your Choice: ";
+       cin >> type;
+       if (type == 3){
+           return;
+       }
+       getTimebyFormat(hours, minutes, type);
+       displayTime(hours,minutes,type);
+
+   } while ((type == 1) || (type == 2));
+
+}
+//end of 27
+void programming_excercise_28()
+{
+    int orderCount = 0;
+    int t9ozCupsSold = 0;
+    int t12ozCupsSold = 0;
+    int t15ozCupsSold = 0;
+    int totalAmountOfCoffeeSold = 0;
+    double bill = 0.0;
+    double totalIncome = 0.0;
+    int orderOpt = 0;
+
+    cout << "running excericise 28" << endl;
+
+    do {
+        cout << "Place your Coffee order" << endl;
+        cout << "Choose your coffee size" << endl;
+        cout << "1 - Small (9oz) $.175: " << endl; 
+        cout << "2 - Medium (12oz) $1.90: " << endl; 
+        cout << "3 - Large (15oz) $2.00: " <<endl;
+        cout << "4 - Done: " <<endl;
+        cout << "Make a selection: ";
+        cin >> orderOpt;
+
+        if (orderOpt == 1 || orderOpt == 2  || orderOpt == 3 ){
+            cout << "Number of coffees in your order: ";
+            cin >> orderCount;
+            switch (orderOpt){
+                case 1:
+                    t9ozCupsSold += orderCount;
+                    totalAmountOfCoffeeSold += 9 * orderCount;
+                    bill = 1.75 * orderCount;
+                    totalIncome += bill;
+                break;
+                case 2:
+                    t12ozCupsSold += orderCount;
+                    totalAmountOfCoffeeSold += 12 * orderCount;
+                    bill = 1.90 * orderCount;
+                    totalIncome += bill;
+                break;
+                case 3:
+                    t15ozCupsSold += orderCount;
+                    totalAmountOfCoffeeSold += 15 * orderCount;
+                    bill = 2.00 * orderCount;
+                    totalIncome += bill;
+                break;
+                case 4:
+                    break;
+            }
+
+            cout << "!! Order Total is $" << bill << endl;
+            cout << endl;
+        }
+
+    } while ( orderOpt <= 3);
+
+    cout << "Number of cups of small size sold: "<< t9ozCupsSold << endl;
+    cout << "Number of cups of medium size sold: "<< t12ozCupsSold << endl;
+    cout << "Number of cups of large size sold: "<< t15ozCupsSold << endl;
+    cout << "Total amount of coffe sold: "<< totalAmountOfCoffeeSold << " oz" << endl;
+    cout << "Money made : $"<< totalIncome << endl;
+
+}
+//start of 28
+
+//end of 28
 //start of 29
 void maxBoxVol(double length, double width, double& maxBoxVol, double& sqlen)
 {
@@ -1212,6 +1528,9 @@ void programming_excercise_29()
     double values[50];
     int count = 0, k = 0;
     int i;
+
+    cout << "running excericise 29" << endl;
+
     cout << "Enter the area of the cardboard: ";
     cin >> areaCardboard;
     for(i = 1; i <= areaCardboard; i++)
@@ -1279,6 +1598,9 @@ void programming_excercise_30()
     double distanceofFactory;
     double costUnderWater;
     double costOverLand;
+
+    cout << "running excericise 30" << endl;
+
     cout << "Enter width of river: ";
     cin >> widthofRiver;
     cout << "Enter distance of factory: ";
@@ -1301,7 +1623,10 @@ void programming_excercise_31()
 {
     double wid1, wid2, len;
     double theta = 30;
-    cout << "Enter widths of both of the corridors: ";
+
+    cout << "running excericise 31" << endl;
+
+    cout << "Enter two number for  widths of both of the corridors: ";
     cin >> wid1 >> wid2;
     double l = pipe(wid1, wid2, theta);
     cout << "Longest length " << l << endl;
@@ -1311,32 +1636,34 @@ void programming_excercise_31()
 //main function
 int main()
 {
-    
-    //programming_excercise_1();
-    //programming_excercise_2();
-    //programming_excercise_3();
-    //programming_excercise_4();
-    //programming_excercise_5();
-    //programming_excercise_6();
-    //programming_excercise_7();
-    //programming_excercise_8();
-    //programming_excercise_9();
-    //programming_excercise_10();
-    //programming_excercise_11();
-    //programming_excercise_12();
-    //programming_excercise_13();
-    //programming_excercise_14();
-    //programming_excercise_15();
-    //programming_excercise_16();
-    //programming_excercise_17();
-    //programming_excercise_18();
-    //programming_excercise_19();
-    //programming_excercise_20();
-    //programming_excercise_21(); 
-    //programming_excercise_22();
-    //programming_excercise_23();
-    //programming_excercise_24();
-    //programming_excercise_25();
+    programming_excercise_1();
+    programming_excercise_2();
+    programming_excercise_3();
+    programming_excercise_4();
+    programming_excercise_5();
+    programming_excercise_6();
+    programming_excercise_7();
+    programming_excercise_8();
+    programming_excercise_9();
+    programming_excercise_10();
+    programming_excercise_11();
+    programming_excercise_12();
+    programming_excercise_13();
+    programming_excercise_14();
+    programming_excercise_15();
+    programming_excercise_16();
+    programming_excercise_17();
+    programming_excercise_18();
+    programming_excercise_19();
+    programming_excercise_20();
+    programming_excercise_21(); 
+    programming_excercise_22();
+    programming_excercise_23();
+    programming_excercise_24();
+    programming_excercise_25();
+    programming_excercise_26();
+    programming_excercise_27();
+    programming_excercise_28();
     programming_excercise_29();
     programming_excercise_30();
     programming_excercise_31();
