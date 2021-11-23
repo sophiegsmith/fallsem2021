@@ -1,0 +1,282 @@
+ssmith@Spectre-x360:~/fallsem2021/CS1A/chap6hw$ ./hw 
+running excericise 1
+Enter a string: abba
+The string  abba is a palindrome. running excericise 2
+Enter a letter: e
+The letter e is a vowel.running excericise 3
+Enter a sequence of characters: There were 0 vowels.
+running excericise 4
+Enter the radius of the sphere: 1
+Square root of Pi = 1.77245
+Surface are of sphere = 12.5664
+Volume of sphere = 4.18879
+running excericise 5
+Enter number of star lines(1-20): 7
+
+
+                               *
+                              * *
+                             * * *
+                            * * * *
+                           * * * * *
+                          * * * * * *
+                         * * * * * * *
+Line 12: Inside main: num 1 =10, num2=15, and ch = A
+Line 26: Inside funOne: a =11, b=30, and v = B
+Line 14: After funOne: num 1 =10, num2=30, and ch = A
+Line 33: Inside funTwo: x =31, y=50, and W = G
+Line 16: After funTwo: num 1 =10, num2=31, and ch = G
+running excericise 6
+Enter a number: 7
+Five times the number: 35
+Enter two integers: 7 7
+Sum of integers from 7 to 7 is 7
+Average of the integers: 7
+running excericise 7
+Enter a number : 3
+Enter a number : 2
+Sum of primes is 2
+running excericise 8
+To run the program enter: 
+1: To find the area of rectangle. 
+2: To find the area of circle. 
+3: To find the area of cylinder. 
+-1: To terminate the program. 
+1
+
+Enter the length  and width of the rectangle: 6 5
+Area of Rectangle = 30.00
+To run the program enter: 
+1: To find the area of rectangle. 
+2: To find the area of circle. 
+3: To find the area of cylinder. 
+-1: To terminate the program. 
+-1
+
+running excericise 9
+54321
+-235
+running excericise 10
+Enter the desired sum of numbers to be rolled: 4
+Enter the number of dice rolls to ge the sum: 4 : 1
+
+Rolling dices.... got: 4 number of dice rolls to get the sum: 4
+Roll dice again (y/n)?n
+running excericise 11
+Enter the points for the center of the circle: 0 0 
+Enter any point on the circle: 1 1
+/n The distance between the points: 1.41
+The radius of the circle: 1.00
+The circumference of the circle: 6.28
+The area of the circle: 3.14
+running excericise 12
+Enter value of x1= 1.1
+Enter value of x2= 2.2
+Enter value of x3= 3.3
+Enter value of x4= 4.4
+Enter value of x5= 5.5
+The mean value is 3.30
+The mean standard deviation is 8.23
+running excericise 13
+Enter L: 1
+Enter r: 2
+Enter m: 3
+Enter t: 4
+Enter t: 5
+Periodic Payment: 0.67
+Unpaid Balance: 1.00
+Run again (Y/N)?
+n
+Running excerise 14
+Enter hourly rate: 10
+Enter total consulting time (minutes): 30
+Enter yearly income amount : 25000
+
+Billing rate : $0.00
+Running excerise 15
+Enter wind speed (miles per hour): 30
+Enter temperature (Farenheit): 30
+Wind Chill Factor is: 14.88
+Running excerise 16
+Enter the number of hours worked: 30
+Enter the rate per hour: 10
+
+Hours worked: 10.00
+Hourly Rate: 30.00
+Salary: $300.00
+Initial values of x, y, and z are 
+x = 0
+y = 0
+z =  
+Enter a number: 2
+Updated values of x, y, and z are 
+x = -2
+y = 0
+z = !
+Running excerise 17
+
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 1
+
+Enter the first integer number: 1
+Enter the second integer number: 2
+1, 2, 2.00
+To run the program, enter 1. 
+To exit the program, enter 99.
+Enter 1 or 99: 99
+
+Running excerise 18
+This program calculates the total time spent by an employee on the job.
+To enter the program, enter(y/Y): y
+
+Enter employee's name: abba
+
+Enter arrival hour: 10
+
+Enter arrival min: 30
+
+Enter (y/Y) if arrival is before 12:00 PM: y
+
+Enter departure hour: 6
+
+Enter departure min: 0
+
+Enter (y/Y) if departure is before 12:00 PM: n
+
+abba
+Time spent on job: 7hour(s) and 30 min. 
+To enter the program, enter(y/Y): n
+
+Running excerise 19
+Enter course score: 80
+Course score is 80
+Your grade for this course is: B
+
+Running excerise 20
+file opened
+Running excerise 21
+Enter a date(mm--dd--yyyy):01-23-2012
+The day number is: 23
+running excericise 22
+Enter string: abba
+Vowel 'a' count is 2
+Vowel 'e' count is 0
+Vowel 'i' count is 0
+Vowel 'o' count is 0
+Vowel 'u' count is 0
+running excericise 23
+Enter string: lily
+Vowel 'a' count is 0
+Vowel 'e' count is 0
+Vowel 'i' count is 1
+Vowel 'o' count is 0
+Vowel 'u' count is 0
+running excericise 24
+Enter a long value: 2220111
+Number of odds: 3
+Number of evens: 3
+Number of zeroes: 1
+running excericise 25
+The discouts are: 
+(a) 30%' for senior citizens.
+(b) 15%' if membership is bought or paid for 12 months.
+(c) 20%' for 5 personal training sessions are bought and paid for.
+Enter cost per month: 200
+Enter cost per personal training session: 60
+Enter 'Y' if you are a senior citizen: Y
+Enter number of training sessions bought: 30
+Enter number of months paid for: 12
+
+Cost of new membership: 840.00
+Enter 'Y' for another membership: 
+n
+running excericise 26
+Enter current price: 300
+Enter previous year price: 150
+Enter price from two years ago: 80
+Inflation of this year is: 100.00%
+Previous inflation from last year87.50%
+running excericise 27
+Time format conversion program
+1 - 24 Hours To 12 Hours
+2 - 12 Hours To 24 Hours
+3 - Exit
+Enter Your Choice: 1
+Enter time in  24 hour time format(hh:mm): 22:50
+converted to 12 hour format is: 10:50 PM
+
+Time format conversion program
+1 - 24 Hours To 12 Hours
+2 - 12 Hours To 24 Hours
+3 - Exit
+Enter Your Choice: 2
+Enter time in 12 hour time format(hh:mm): 10:50
+converted to 24 hour format is: 22:50
+
+Time format conversion program
+1 - 24 Hours To 12 Hours
+2 - 12 Hours To 24 Hours
+3 - Exit
+Enter Your Choice: 3
+running excericise 28
+Place your Coffee order
+Choose your coffee size
+1 - Small (9oz) $.175: 
+2 - Medium (12oz) $1.90: 
+3 - Large (15oz) $2.00: 
+4 - Done: 
+Make a selection: 1
+Number of coffees in your order: 3
+!! Order Total is $5.25
+
+Place your Coffee order
+Choose your coffee size
+1 - Small (9oz) $.175: 
+2 - Medium (12oz) $1.90: 
+3 - Large (15oz) $2.00: 
+4 - Done: 
+Make a selection: 2
+Number of coffees in your order: 3
+!! Order Total is $5.70
+
+Place your Coffee order
+Choose your coffee size
+1 - Small (9oz) $.175: 
+2 - Medium (12oz) $1.90: 
+3 - Large (15oz) $2.00: 
+4 - Done: 
+Make a selection: 3
+Number of coffees in your order: 3
+!! Order Total is $6.00
+
+Place your Coffee order
+Choose your coffee size
+1 - Small (9oz) $.175: 
+2 - Medium (12oz) $1.90: 
+3 - Large (15oz) $2.00: 
+4 - Done: 
+Make a selection: 4
+Number of cups of small size sold: 3
+Number of cups of medium size sold: 3
+Number of cups of large size sold: 3
+Total amount of coffe sold: 108 oz
+Money made : $16.95
+running excericise 29
+Enter the area of the cardboard: 20
+Length of cardboard = 5.00 inches. 
+Width of cardboard = 4.00 inches. 
+Length of square to cut to form box = 0.736 inches. 
+Max volume of box = 6.564 inches cubed.
+running excericise 30
+Enter width of river: 40
+Enter distance of factory: 100
+Enter cost of laying powerline underwater: 3250 
+Enter cost of laying powerline over land: 2500
+Length of powerline underwater is: 62.636
+Length of powerline overwater is: 0.000
+Cost of constructing the power line is: 333066.261
+running excericise 31
+Enter two number for  widths of both of the corridors: 21 30 
+Longest length 173.233
+ssmith@Spectre-x360:~/fallsem2021/CS1A/chap6hw$ 
