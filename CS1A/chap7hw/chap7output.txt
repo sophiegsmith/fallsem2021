@@ -1,0 +1,34 @@
+Running Programming Excercise 1 from Chapter 7
+Enter the length of side 1: 2.3
+Enter the length of side 2: 2.3
+Enter the length of side 3: 2.3
+The triangle is equilateral.
+Running Programming Excercise 6 from Chapter 7
+Random number is: 13
+Doubled the number is: 169
+Reverse of the number is: 31
+Raise to the power of 2: 961
+Raise to the power of 3: 29791
+Raise to the power of 4: 923521
+Sum of digits of the number: 4
+Running Programming Excercise 11 from Chapter 7
+Enter the string: sophie
+The sum of values of characters are: 648
+
+ssmith@Spectre-x360:~/fallsem2021/CS1A/chap7hw$ ./hw
+Running Programming Excercise 1 from Chapter 7
+Enter the length of side 1: 7.1
+Enter the length of side 2: 6.1
+Enter the length of side 3: 5.1
+The triangle is scalene.
+Running Programming Excercise 6 from Chapter 7
+Random number is: 42
+Doubled the number is: 1764
+Reverse of the number is: 24
+Raise to the power of 2: 576
+Raise to the power of 3: 13824
+Raise to the power of 4: 331776
+Sum of digits of the number: 6
+Running Programming Excercise 11 from Chapter 7
+Enter the string: spring
+The sum of values of characters are: 659
