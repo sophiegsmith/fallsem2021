@@ -1,0 +1,32 @@
+Running programming excercise 1 from Chapter 8
+Elements in array: 
+0 
+100 
+400 
+90 
+120 
+
+Running programming excercise 2 from Chapter 8
+Enter size of an array: 5
+Enter elements: 1 2 7 8 10
+Smallest element in the array is: 1 at index is 0
+
+Running programming excercise 3 from Chapter 8
+Enter elements stored in array (<= 20) : 5
+Enter elements: 52 127 17 13 4 1
+The largest element is 127 and its index is 1
+
+Running programming excercise 4 from Chapter 8
+file opened
+file opened
+Number of test scores stored in the file: 26
+The result of score ranges and number of students in each range.
+range 0-24: 1
+range 25-49: 2
+range 50-74: 0
+range 75-99: 6
+range 100-124: 1
+range 125-149: 3
+range 150-174: 5
+range 175-200: 8
+Number of students: 26
